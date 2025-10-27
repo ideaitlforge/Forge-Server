@@ -165,9 +165,6 @@ const getPeople = () => __awaiter(void 0, void 0, void 0, function* () {
             }
         }
     });
-    if (!people || people.length === 0) {
-        throw new appError_1.default(404, "No People found");
-    }
     return people;
 });
 // get people by id

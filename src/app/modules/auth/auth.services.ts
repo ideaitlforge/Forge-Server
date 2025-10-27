@@ -196,9 +196,6 @@ const getPeople = async () => {
             }
         }
     );
-    if (!people || people.length === 0) {
-        throw new AppError(404, "No People found");
-    }
     return people
 }
 
